@@ -28,6 +28,7 @@ class AutoComplete extends InputWidget
     public function run()
     {
         $this->registerAssets();
+        $this->registerJS();
 
         return $this->hasModel() ?
             Html::activeTextInput($this->model, $this->attribute, $this->options) :
